@@ -1,5 +1,7 @@
 # --extra-index-url https://download.pytorch.org/whl/cu124
 # --extra-index-url https://download.pytorch.org/whl/cu121
+packaging>=23.2 
+setuptools<81
 transformers==4.30.1
 torch==2.6.0 
 torchvision==0.21.0 
@@ -40,7 +42,7 @@ requests==2.32.3
 safetensors==0.5.2
 scikit-image==0.25.0
 scipy==1.15.0
-setuptools==75.6.0
+#setuptools==75.6.0
 SimpleITK==2.4.1
 six==1.16.0
 tifffile==2024.12.12
@@ -48,3 +50,5 @@ typing_extensions==4.12.2
 tzdata==2023.3
 urllib3==1.26.16
 wheel==0.45.1
+omegaconf==2.3.0
+ftfy==6.2.0

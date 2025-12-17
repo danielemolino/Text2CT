@@ -1,0 +1,29 @@
+per_gpu_train_batch_size: 8
+n_gpu: 1
+num_workers: 16
+num_train_epochs: 30
+
+name: "CLIP3D-bs8-full-report"
+save_steps_epochs: 10
+
+dataset: "CT-RATE"
+report_type: "full_report"  # "impression" to use only the impression text
+
+gradient_accumulation_steps: 1
+logging_steps: 50
+save_steps: 0
+
+saved_checkpoints: "clip_training/checkpoints"
+logs: "clip_training/logs"
+
+clip_model: "clip_3D"
+data_list: "dataset/train_data_volumes.json"
+reports_csv: "dataset/train_reports.csv"
+seed: 11
+
+optimizer:
+  params:
+    eps: 1.0e-08
+    lr: 5e-5
+    weight_decay: 1e-4
+  type: AdamW

@@ -52,7 +52,6 @@ snapshot_download(
     repo_type="model",
     local_dir="your_local_path" 
 )
-
 ```
 Set these paths in the configs:
 - `trained_autoencoder_path` -> `autoencoder`

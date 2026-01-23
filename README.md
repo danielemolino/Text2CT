@@ -43,11 +43,13 @@ pip install -r requirements.txt
 
 You can download them from Hugging Face at [Weights](https://huggingface.co/dmolino/text2ct-weights):
 ```python
-from huggingface_hub import hf_hub_download
+from huggingface_hub import snapshot_download
 repo_id = "dmolino/text2ct-weights"
-autoencoder = hf_hub_download(repo_id, "autoencoder_epoch273.pt")
-unet = hf_hub_download(repo_id, "unet_rflow_200ep.pt")
-clip = hf_hub_download(repo_id, "CLIP3D_Finding_Impression_30ep.pt")
+snapshot_download(
+    repo_id=repo_id,
+    repo_type="model",
+    local_dir="your_local_path" 
+)
 ```
 Set these paths in the configs:
 - `trained_autoencoder_path` -> `autoencoder`

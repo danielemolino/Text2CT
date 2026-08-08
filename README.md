@@ -1,11 +1,9 @@
 <div align="center">
 
-# From Alignment to Synthesis
-
-### Contrastive Volumetric Grounding for Text-to-CT Generation
+# From Alignment to Synthesis Contrastive Volumetric Grounding for Text-to-CT Generation
 
 <p>
-  <a href="https://bmvc2026.org/"><img src="https://img.shields.io/badge/BMVC-2026-4b2e83?style=for-the-badge&labelColor=1a1a1a" alt="BMVC 2026"></a>
+  <a href="[https://bmvc2026.org/](https://bmvc2026.bmva.org)"><img src="https://img.shields.io/badge/BMVC-2026-4b2e83?style=for-the-badge&labelColor=1a1a1a" alt="BMVC 2026"></a>
   <a href="https://arxiv.org/abs/2506.00633"><img src="https://img.shields.io/badge/arXiv-2506.00633-b31b1b?style=for-the-badge&logo=arxiv&logoColor=white&labelColor=1a1a1a" alt="arXiv"></a>
   <a href="https://huggingface.co/dmolino/text2ct-weights"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Weights-text2ct-ffcc4d?style=for-the-badge&labelColor=1a1a1a" alt="Weights"></a>
   <a href="https://huggingface.co/datasets/dmolino/CT-RATE_Generated_Scans"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Dataset-1k%20synthetic%20CTs-ffcc4d?style=for-the-badge&labelColor=1a1a1a" alt="Dataset"></a>

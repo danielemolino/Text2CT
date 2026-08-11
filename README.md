@@ -32,7 +32,6 @@
 >
 > 📄 **Updated paper:** [arXiv:2506.00633](https://arxiv.org/abs/2506.00633) (v3)
 > 🚧 **Code:** what you find below is the release accompanying the original preprint. The BMVC version — hard-negative contrastive training and updated checkpoints — will land here *<!-- edit: e.g. by March 2026 -->*. ⭐ the repo to get notified.
-> 📦 **Previous version:** preserved under the [`v1-preprint`](../../releases/tag/v1-preprint) tag.
 
 ---
 

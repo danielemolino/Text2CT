@@ -207,11 +207,14 @@ Edit `example_report` inside the script. Output: `predictions/demo.nii.gz`.
 If you find this work useful, please cite:
 
 ```bibtex
-@inproceedings{molino2026alignment,
-  title     = {From Alignment to Synthesis: Contrastive Volumetric Grounding for Text-to-CT Generation},
-  author    = {Molino, Daniele and Caruso, Camillo Maria and Ruffini, Filippo and Guarrasi, Valerio and Soda, Paolo},
-  booktitle = {British Machine Vision Conference (BMVC)},
-  year      = {2026}
+@misc{molino2026alignment,
+      title={From Alignment to Synthesis Contrastive Volumetric Grounding for Text-to-CT Generation}, 
+      author={Daniele Molino and Camillo Maria Caruso and Filippo Ruffini and Paolo Soda and Valerio Guarrasi},
+      year={2026},
+      eprint={2506.00633},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2506.00633}, 
 }
 ```
 

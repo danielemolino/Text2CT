@@ -3,10 +3,11 @@
 # From Alignment to Synthesis Contrastive Volumetric Grounding for Text-to-CT Generation
 
 <p>
-  <a href="[https://bmvc2026.org/](https://bmvc2026.bmva.org)"><img src="https://img.shields.io/badge/BMVC-2026-4b2e83?style=for-the-badge&labelColor=1a1a1a" alt="BMVC 2026"></a>
+  <a href="https://bmvc2026.bmva.org"><img src="https://img.shields.io/badge/BMVC-2026-4b2e83?style=for-the-badge&labelColor=1a1a1a" alt="BMVC 2026"></a>
   <a href="https://arxiv.org/abs/2506.00633"><img src="https://img.shields.io/badge/arXiv-2506.00633-b31b1b?style=for-the-badge&logo=arxiv&logoColor=white&labelColor=1a1a1a" alt="arXiv"></a>
   <a href="https://huggingface.co/dmolino/text2ct-weights"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Weights-text2ct-ffcc4d?style=for-the-badge&labelColor=1a1a1a" alt="Weights"></a>
   <a href="https://huggingface.co/datasets/dmolino/CT-RATE_Generated_Scans"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Dataset-1k%20synthetic%20CTs-ffcc4d?style=for-the-badge&labelColor=1a1a1a" alt="Dataset"></a>
+  <a href="https://huggingface.co/spaces/dmolino/text-to-ct-generation"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Demo-Try%20Text2CT-ffcc4d?style=for-the-badge&labelColor=1a1a1a" alt="Interactive Demo"></a>
 </p>
 
 **Daniele Molino**<sup>1</sup> · **Camillo Maria Caruso**<sup>1</sup> · **Filippo Ruffini**<sup>1,2</sup> · **Valerio Guarrasi**<sup>3</sup> · **Paolo Soda**<sup>1,2</sup>
@@ -17,6 +18,7 @@
   <a href="https://arxiv.org/abs/2506.00633"><b>Paper</b></a> &nbsp;·&nbsp;
   <a href="#-model-overview"><b>Method</b></a> &nbsp;·&nbsp;
   <a href="#-synthetic-dataset"><b>Dataset</b></a> &nbsp;·&nbsp;
+  <a href="#-interactive-demo"><b>Demo</b></a> &nbsp;·&nbsp;
   <a href="#-getting-started"><b>Getting started</b></a> &nbsp;·&nbsp;
   <a href="#-citation"><b>Citation</b></a>
 </p>
@@ -32,7 +34,6 @@
 >
 > 📄 **Updated paper:** [arXiv:2506.00633](https://arxiv.org/abs/2506.00633) (v3)
 > 🚧 **Code:** what you find below is the release accompanying the original preprint. The BMVC version — hard-negative contrastive training and updated checkpoints — will land here *<!-- edit: e.g. by March 2026 -->*. ⭐ the repo to get notified.
-> 📦 **Previous version:** preserved under the [`v1-preprint`](../../releases/tag/v1-preprint) tag.
 
 ---
 
@@ -57,6 +58,14 @@ Evaluated on CT-RATE across 18 pathological conditions, the method reaches state
 We release **1,000 synthetic chest CT scans** generated with our model for the [VLM3D Challenge](https://vlm3dchallenge.com).
 
 ➡️ [Synthetic Text-to-CT Dataset on Hugging Face](https://huggingface.co/datasets/dmolino/CT-RATE_Generated_Scans)
+
+---
+
+## 🤗 Interactive Demo
+
+Try Text2CT directly in your browser: generate 3D CT volumes from radiology reports with our [interactive demo on Hugging Face Spaces](https://huggingface.co/spaces/dmolino/text-to-ct-generation).
+
+The demo uses the released preprint weights and runs on Hugging Face ZeroGPU.
 
 ---
 
@@ -208,11 +217,14 @@ Edit `example_report` inside the script. Output: `predictions/demo.nii.gz`.
 If you find this work useful, please cite:
 
 ```bibtex
-@inproceedings{molino2026alignment,
-  title     = {From Alignment to Synthesis: Contrastive Volumetric Grounding for Text-to-CT Generation},
-  author    = {Molino, Daniele and Caruso, Camillo Maria and Ruffini, Filippo and Guarrasi, Valerio and Soda, Paolo},
-  booktitle = {British Machine Vision Conference (BMVC)},
-  year      = {2026}
+@misc{molino2026alignment,
+      title={From Alignment to Synthesis Contrastive Volumetric Grounding for Text-to-CT Generation},
+      author={Daniele Molino and Camillo Maria Caruso and Filippo Ruffini and Paolo Soda and Valerio Guarrasi},
+      year={2026},
+      eprint={2506.00633},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2506.00633},
 }
 ```
 
@@ -223,6 +235,8 @@ If you find this work useful, please cite:
 Questions or collaborations — **Daniele Molino**, [daniele.molino@unicampus.it](mailto:daniele.molino@unicampus.it)
 
 ## 🙏 Acknowledgements
+
+We thank the **[Hugging Face](https://huggingface.co/) open-source team**, especially **[Apolinario](https://github.com/apolinario)**, for building the interactive demo and supporting it with a [ZeroGPU grant](https://huggingface.co/docs/hub/en/spaces-zerogpu), making Text2CT accessible directly in the browser.
 
 This repository builds on:
 

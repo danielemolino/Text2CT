@@ -242,3 +242,20 @@ This repository builds on:
 
 - [MAISI tutorials (MONAI)](https://github.com/Project-MONAI/tutorials/tree/main/generation/maisi)
 - [XGeM](https://github.com/cosbidev/XGeM)
+
+
+---
+
+## 🏆 VLM3D Challenge
+
+[![VLM3D 2025](https://img.shields.io/badge/VLM3D%202025-2nd%20place%20%C2%B7%20CT%20Volume%20Generation-c0c0c0?style=for-the-badge&labelColor=1a1a1a)](https://vlm3dchallenge.com)
+
+This model ranked **2nd in the CT Volume Generation task of the [VLM3D Challenge](https://vlm3dchallenge.com) 2025**, and was also submitted to the 2026 edition.
+
+| | |
+|---|---|
+| **Team** | D. Molino¹, C. M. Caruso¹, I. Iele¹, V. Guarrasi³, P. Soda¹ ² · ¹Università Campus Bio-Medico di Roma · ²Umeå University · ³UniCamillus |
+| **Data** | [CT-RATE](https://huggingface.co/datasets/ibrahimhamamci/CT-RATE), official split · preprocessing: `scripts/preprocess_ctrate.py` |
+| **Weights** | [🤗 dmolino/text2ct-weights](https://huggingface.co/dmolino/text2ct-weights) |
+| **Results & limitations** | [paper](https://arxiv.org/abs/2506.00633) |
+| **License** | Apache-2.0 · research use only, not for clinical use |

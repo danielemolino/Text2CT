@@ -1,6 +1,6 @@
 <div align="center">
 
-# From Alignment to Synthesis Contrastive Volumetric Grounding for Text-to-CT Generation
+# From Alignment to Synthesis Contrastive Volumetric Grounding for Text-to-CT Generation    
 
 <p>
   <a href="https://bmvc2026.bmva.org"><img src="https://img.shields.io/badge/BMVC-2026-4b2e83?style=for-the-badge&labelColor=1a1a1a" alt="BMVC 2026"></a>
